@@ -50,6 +50,10 @@ var nomeStudente = prompt("Inserire nome");
 var cognomeStudente = prompt("Inserire cognome");
 var etaStudente = parseInt(prompt("Inserire l'età"));
 
+if (isNaN(etaStudente)) {
+  etaStudente = parseInt(prompt("Inserire l'età in numero, grazie."));
+}
+
 nuovoStudente.nome = nomeStudente;
 nuovoStudente.cognome = cognomeStudente;
 nuovoStudente.eta = etaStudente;
